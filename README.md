@@ -28,14 +28,14 @@ println!("{}", response);
 Get a web page via HTTP:
 
 ```rust
-let response = getit::get("http://www.example.com")
+let response = getit::get("http://www.example.com").unwrap();
 println!("{}", response);
 ```
 
 Get a web page via HTTPS:
 
 ```rust
-let response = getit::get("https://www.example.com")
+let response = getit::get("https://www.example.com").unwrap();
 println!("{}", response);
 ```
 
